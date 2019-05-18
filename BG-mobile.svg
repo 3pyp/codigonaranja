@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="417.422" height="743" viewBox="0 0 417.422 743">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff503a;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="BG-mobile" transform="translate(-2869.578 7)">
+    <path id="Path_65" data-name="Path 65" class="cls-1" d="M5080.646,533.877l-255.438-75.548H4519.345V875.638h305.862l259.75-90.817C5212.579,726.643,5210.225,589.668,5080.646,533.877Z" transform="translate(3745.216 -4525.988) rotate(90)"/>
+    <rect id="Rectangle_14" data-name="Rectangle 14" class="cls-2" width="417" height="743" transform="translate(2870 -7)"/>
+  </g>
+</svg>
