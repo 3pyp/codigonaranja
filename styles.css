@@ -113,6 +113,14 @@ html {
   }
 }
 @media screen and (max-width: 768px) {
+  .contain{
+    width: 80%
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  
   .main {
     background: url("/BG-mobile.svg");
     background-repeat: no-repeat;
@@ -134,12 +142,85 @@ html {
     display: flex;
     flex-flow: column;
     align-content: center;
-    justify-content: space-around
+    justify-content: start;
+    padding-top: 80px;
   }
-  .text{
-    order:1
+  .shapes-text {
+    display: flex;
+    flex-flow: column;
+    justify-content: start;
+    align-content: space-around;
+    width: 100%;
+    padding: 0 30px;
+    height: inherit;
+    align-self: stretch;
   }
-  .shapes{
-    order:2
+  .text {
+    order: 1;
+    text-align: center;
+  }
+  .space {
+    display: none;
+  }
+  .shapes {
+    order: 2;
+    grid-template-columns: 50% 50%;
+    width: 30%;
+    align-self: center;
+    margin-top: 150px;
+    grid-gap: 30px 20px;
+  }
+
+  .hexagon {
+    width: 35px;
+    height: 50px;
+    background: #fff;
+    position: relative;
+    left: 5px
+  }
+  .circle {
+    background: #fff;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .hexagon:before {
+    left: -15px;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-right: 15px solid #fff;
+  }
+  .hexagon:after {
+    right: -15px;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 15px solid #fff;
+  }
+  .triangle {
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid #fff;
+  }
+  .square {
+    width: 50px;
+    height: 50px;
+  }
+  .contain{
+    padding-top: 45px;
+  }
+  .shapes {
+    width: 45%;
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-device-width: 500px) and (min-device-height:800px) {
+  .contain{
+    padding-top: 80px;
+  }
+  .shapes {
+    width: 45%;
+    margin-top: 60%;
   }
 }
