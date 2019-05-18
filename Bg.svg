@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1742.945" height="1086.779" viewBox="0 0 1742.945 1086.779">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff503a;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Bg" transform="translate(5285.255 -506)">
+    <path id="bg-2" data-name="bg" class="cls-1" d="M5807.17,846.67,5313.219,634.008H4462.784V1720.473h804.778l550.308-250.87C6134.677,1325.183,6128.831,985.163,5807.17,846.67Z" transform="translate(-9748.039 -127.694)"/>
+    <rect id="Rectangle_12" data-name="Rectangle 12" class="cls-2" width="1742.69" height="1080" transform="translate(-5285 506)"/>
+  </g>
+</svg>

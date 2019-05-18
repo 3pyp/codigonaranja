@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      img {
+        width: 100%;
+      }
+      .container {
+        position: relative;
+        top: 200px;
+        width: 180px;
+        margin: 0 auto;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        grid-template-columns: 50% 50%;
+        grid-gap: 30px 20px;
+      }
+      .hexagon-circle {
+        width: 60px;
+        height: 90px;
+        left: 12.5px;
+        background: #ff503a;
+        position: relative;
+        animation: hexagon-to-orange 2.5s 0s infinite
+          ease-in-out alternate-reverse;
+      }
+      #circle{
+        animation: hexagon-to-orange 2.5s 0s infinite
+          ease-in-out alternate;
+      }
+      
+      
+
+      .hexagon-circle:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -25px;
+        width: 0;
+        height: 0;
+        border-top: 45px solid transparent;
+        border-bottom: 45px solid transparent;
+        border-right: 25px solid #ff503a;
+        animation: hexagon-to-orange_before 2.5s 0s infinite
+          ease-in-out alternate-reverse;
+      }
+      .hexagon-circle:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -25px;
+        width: 0;
+        height: 0;
+        border-top: 45px solid transparent;
+        border-bottom: 45px solid transparent;
+        border-left: 25px solid #ff503a;
+        animation: hexagon-to-orange_after 2.5s 0s infinite
+          ease-in-out alternate-reverse;
+        /* animation: hexagon-to-orange_after 3s 2s infinite
+          cubic-bezier(1, 0.015, 0.295, 1.225) alternate-reverse; */
+      }
+      #circle:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -25px;
+        width: 0;
+        height: 0;
+        border-top: 45px solid transparent;
+        border-bottom: 45px solid transparent;
+        border-right: 25px solid #ff503a;
+        animation: hexagon-to-orange_before 2.5s 0s infinite
+          ease-in-out alternate;
+      }
+      #circle:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -25px;
+        width: 0;
+        height: 0;
+        border-top: 45px solid transparent;
+        border-bottom: 45px solid transparent;
+        border-left: 25px solid #ff503a;
+        animation: hexagon-to-orange_after 2.5s 0s infinite
+          ease-in-out alternate;
+      }
+      .triangle-square {
+        width: 0;
+        height: 0;
+        border-left: 45px solid transparent;
+        border-right: 45px solid transparent;
+        border-bottom: 90px solid #ff503a;
+        animation: triangle-to-orange 2.5s 0s infinite
+          ease-in-out alternate-reverse;
+      }
+      #square{
+        animation: triangle-to-orange 2.5s 0s infinite
+          ease-in-out alternate;
+      }
+      
+      @keyframes triangle-to-orange {
+        0% {
+          width: 90px;
+        height: 90px;
+         border-top: 0px solid #ff503a;
+         border-left: 0px solid #ff503a;
+        border-right: 0px solid #ff503a;
+        border-bottom: 0px solid #ff503a;
+          background:  #ff503a;
+        }
+      }
+      @keyframes hexagon-to-orange {
+        0% {
+          left:0;
+          width: 90px;
+        height: 90px;
+          border-radius: 50%;
+        }
+      }
+      @keyframes hexagon-to-orange_before {
+        0% {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 0;
+          height: 0;
+          border-top: 0px solid transparent;
+          border-bottom: 0px solid transparent;
+          border-right: 0px solid transparent;
+        }
+      }
+      @keyframes hexagon-to-orange_after {
+        0% {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 0;
+          height: 0;
+          border-top: 0px solid transparent;
+          border-bottom: 0px solid transparent;
+          border-left: 0px solid transparent;
+        }
+      }
+
+      @keyframes square-to-orange {
+        0% {
+          border-left: 45px solid transparent;
+        border-right: 45px solid transparent;
+        border-top: 0px solid #ff513a00;
+        border-bottom: 90px solid #ff503a;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="hexagon" class="hexagon-circle" id="one"></div>
+      <div id="triangle" class="triangle-square" id="two"></div>
+      <div id="square" class="triangle-square" id="three"></div>
+      <div id="circle" class="hexagon-circle" id="four"></div>
+    </div>
+  </body>
+</html>
